@@ -16,7 +16,7 @@ endingStation;
 
 // Create a array for each line
 
-lines = {
+var lines = {
   'green': ["Haymarket", "Government Center", "Park Street", "Boylston", "Arlington", "Copley"],
   'red': ["Alewife", "Davis", "Porter", "Harvard", "Central", "Kendall/MIT", "Park Street", "South Station"],
   'orange': ["North Station", "Haymarket", "Park Street", "State Street", "Downtown Crossing", "Chinatown", "Tufts"]
@@ -33,6 +33,8 @@ var calcStops = function(originLine, origin, destinationLine, destination) {
     return calcIndexDistance(originLine, origin, "Park Street") + calcIndexDistance(destinationLine, destination, "Park Street");
   }
 }
+
+// tests:
 
 startingLine = 'red';
 startingStation = 'South Station';
